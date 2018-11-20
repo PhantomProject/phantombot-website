@@ -1,0 +1,1173 @@
+html {
+    font: 14px/1.5 normal normal;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: #efdab9;
+    background-color: #343233;
+    -webkit-font-smoothing: antialiased
+}
+
+body {
+    margin: 0
+}
+
+h2 {
+    margin: 0 0 2rem 0;
+    font-weight: 300;
+    font-size: 2.2em;
+    letter-spacing: 0.05em
+}
+
+h3 {
+    margin: 3rem 0 1rem 0;
+    font-weight: 300;
+    font-size: 1.6em;
+    letter-spacing: 0.05em
+}
+
+h4 {
+    margin: 2rem 0 1rem 0;
+    font-weight: 600;
+    font-size: 1.1em
+}
+
+a {
+    color: #e2ad4b;
+    font-weight: 500;
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+hr {
+    margin: 4rem 6rem;
+    border: none;
+    border-top: 1px solid #625c54
+}
+
+strong {
+    color: #8bbbae
+}
+
+li {
+    padding: .5rem;
+    line-height: 1.4
+}
+
+img {
+    max-width: 100%
+}
+
+p>img {
+    margin-top: 2rem;
+    margin-bottom: 2rem
+}
+
+p:last-child>img {
+    margin-bottom: 0
+}
+
+code {
+    padding: .2em .4em;
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-weight: 600;
+    font-size: 85%;
+    color: #f6ebda;
+    background-color: #494647;
+    border-radius: 3px
+}
+
+.is-centered {
+    text-align: center
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 2rem
+}
+
+.wrapper+.wrapper {
+    padding-top: 0
+}
+
+.wrapper--full {
+    text-align: center
+}
+
+.video-container {
+    display: flex;
+    position: relative;
+    padding-top: 56.25%
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 15px 20px 4px rgba(0, 0, 0, 0.15)
+}
+
+.video-hud {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex
+}
+
+.video-hud.is-hidden {
+    display: none
+}
+
+.video-play-button.mega-octicon {
+    margin: auto;
+    padding: 0;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1;
+    font-size: 76px;
+    border-radius: 2em;
+    color: #1a1919;
+    border: 4px solid;
+    background-color: #dda131;
+    cursor: pointer;
+    outline: none
+}
+
+.video-play-button.mega-octicon:before {
+    left: 0.05em;
+    position: relative
+}
+
+.video-play-button:focus {
+    border-style: dashed
+}
+
+.video-play-button:hover {
+    background-color: #e5b55d
+}
+
+.video-play-button:active {
+    transform: scale(0.96);
+    background-color: #d39522
+}
+
+.logo {
+    margin-top: 1rem;
+    height: 60px
+}
+
+.intro {
+    text-align: center
+}
+
+.intro h2 {
+    font-size: 2.2em
+}
+
+.intro p {
+    font-size: 1.3em
+}
+
+.intro p sup {
+    font-size: 60%
+}
+
+.privacy-img {
+    margin: 0
+}
+
+.privacy-list {
+    padding-left: 0;
+    list-style: none
+}
+
+.privacy-list li {
+    padding: 0;
+    margin-top: 3em
+}
+
+.love {
+    text-decoration: none;
+    text-align: center
+}
+
+.love .octicon-logo-github {
+    position: relative;
+    top: 0.11em
+}
+
+.love a {
+    color: inherit;
+    text-decoration: none
+}
+
+.hero {
+    padding-top: 100px;
+    background-image: url(//github-atom-io-herokuapp-com.freetls.fastly.net/assets/real-time-lines-75eb1c5d3bc43af4d596c2726e802faf.svg), url(//github-atom-io-herokuapp-com.freetls.fastly.net/assets/real-time-bg-bd4424f50bf9cb725a21f11e1591d2a9.svg);
+    background-repeat: no-repeat;
+    background-position: -580px 30px, calc(100% + 215px) -260px;
+    background-size: auto 68px, auto 340px
+}
+
+.wrapper--video {
+    background-image: url(//github-atom-io-herokuapp-com.freetls.fastly.net/assets/real-time-lines-75eb1c5d3bc43af4d596c2726e802faf.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 68px
+}
+
+body {
+    padding-bottom: 200px;
+    background-image: url(//github-atom-io-herokuapp-com.freetls.fastly.net/assets/real-time-lines-75eb1c5d3bc43af4d596c2726e802faf.svg), url(//github-atom-io-herokuapp-com.freetls.fastly.net/assets/real-time-bg-bd4424f50bf9cb725a21f11e1591d2a9.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% + 500px) calc(100% - 50px), -170px calc(100% - -155px);
+    background-size: auto 68px, auto 340px
+}
+
+@media (min-width: 600px) {
+    html {
+        font-size: 15px
+    }
+    .wrapper {
+        max-width: 560px;
+        padding: 4rem 2rem
+    }
+    .wrapper--full {
+        max-width: none
+    }
+    .wrapper--video {
+        margin-bottom: 4rem
+    }
+    .logo {
+        width: 116px;
+        height: 106px
+    }
+    .privacy-list {
+        display: flex;
+        margin: 2rem 0
+    }
+    .privacy-list li {
+        flex: 1;
+        margin: 0
+    }
+    .privacy-list p {
+        margin: 0
+    }
+    .privacy-list p:last-child {
+        margin-top: 1rem;
+        padding: 1rem;
+        font-size: .9em;
+        border-radius: 6px;
+        border: 1px solid #494647;
+        background-color: #393738
+    }
+    .privacy-list li+li {
+        margin-left: 1rem
+    }
+    .privacy-img-wrapper {
+        text-align: center
+    }
+    .hero {
+        padding-top: 0;
+        background-position: -1340px 50px, calc(100% + 550px) -490px;
+        background-size: auto
+    }
+    .wrapper--video {
+        background-image: url(//github-atom-io-herokuapp-com.freetls.fastly.net/assets/real-time-lines-75eb1c5d3bc43af4d596c2726e802faf.svg), url(//github-atom-io-herokuapp-com.freetls.fastly.net/assets/real-time-bg-bd4424f50bf9cb725a21f11e1591d2a9.svg);
+        background-position: center;
+        background-size: auto;
+        margin-bottom: 5rem
+    }
+    body {
+        background-image: url(//github-atom-io-herokuapp-com.freetls.fastly.net/assets/real-time-lines-75eb1c5d3bc43af4d596c2726e802faf.svg), url(//github-atom-io-herokuapp-com.freetls.fastly.net/assets/real-time-bg-bd4424f50bf9cb725a21f11e1591d2a9.svg);
+        background-position: calc(100% + 1140px) calc(100% - 60px), -420px calc(100% - -500px);
+        background-size: auto
+    }
+}
+
+@media (min-width: 1000px) {
+    html {
+        font-size: 16px
+    }
+    .wrapper {
+        padding: 5rem 0
+    }
+    .video-container {
+        padding-top: 0
+    }
+    .video {
+        position: relative;
+        margin: auto;
+        top: initial;
+        left: initial;
+        width: 960px;
+        height: 540px
+    }
+    .hero {
+        background-position: -1200px 80px, calc(100% + 470px) -420px
+    }
+    body {
+        background-position: calc(100% + 1140px) calc(100% - 60px), -420px calc(100% - -360px)
+    }
+}
+
+.section.hero--login .wrapper.intro h2 {
+    font-size: 2.4em
+}
+
+.section.hero--login .wrapper.intro h2 sup {
+    font-size: 0.4em
+}
+
+.section.login .wrapper {
+    padding-top: 0px;
+    text-align: center
+}
+
+.section.login .wrapper h3 {
+    margin-top: 0px
+}
+
+.hero .wrapper {
+    padding-bottom: 2rem
+}
+
+.wrapper.intro {
+    padding-bottom: 0
+}
+
+.account-token {
+    margin-top: 4em
+}
+
+.account-token h3 {
+    font-size: 1.1em
+}
+
+.account-token-form {
+    background: #fff;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 350px;
+    padding: 1em
+}
+
+.account-token-form label {
+    color: #333;
+    text-align: left;
+    font-weight: 600
+}
+
+.account-token-form input {
+    margin: 1em 0
+}
+
+.account-token-form input,
+.account-token-form button {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    padding: .5em 1em;
+    border-radius: 3px;
+    box-sizing: border-box;
+    flex: 1
+}
+
+.show-token {
+    flex: 1;
+    text-align: center;
+    border: 1px solid #d1d1d2
+}
+
+.copy-token {
+    border: none;
+    color: #ffffff;
+    border: 1px solid transparent;
+    background-color: #dda131;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    outline: none
+}
+
+.copy-token:focus,
+.copy-token:hover {
+    background-color: #e5b55d
+}
+
+.copy-token:active {
+    background-color: #d39522
+}
+
+.note {
+    color: #939395;
+    margin: 0 0 3em
+}
+
+@font-face {
+    font-family: 'octicons';
+    src: url(//github-atom-io-herokuapp-com.freetls.fastly.net/assets/octicons-de35a50f92a9d4dd1323c94bfafa0760.eot?#iefix) format("embedded-opentype"), url(//github-atom-io-herokuapp-com.freetls.fastly.net/assets/octicons-c454384be190f57090d12ff21bb3d9cb.woff) format("woff"), url(//github-atom-io-herokuapp-com.freetls.fastly.net/assets/octicons-943a6f9ad9e374c3b045a49ef1e9f3ab.ttf) format("truetype"), url(//github-atom-io-herokuapp-com.freetls.fastly.net/assets/octicons-f76c313ba58f62d06a577ef7e6c77c6b.svg#octicons) format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+.octicon {
+    font: normal normal 16px octicons;
+    line-height: 1;
+    display: inline-block;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.mega-octicon {
+    font: normal normal 32px octicons;
+    line-height: 1;
+    display: inline-block;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.octicon-alert:before {
+    content: '\f02d'
+}
+
+.octicon-alignment-align:before {
+    content: '\f08a'
+}
+
+.octicon-alignment-aligned-to:before {
+    content: '\f08e'
+}
+
+.octicon-alignment-unalign:before {
+    content: '\f08b'
+}
+
+.octicon-arrow-down:before {
+    content: '\f03f'
+}
+
+.octicon-arrow-left:before {
+    content: '\f040'
+}
+
+.octicon-arrow-right:before {
+    content: '\f03e'
+}
+
+.octicon-arrow-small-down:before {
+    content: '\f0a0'
+}
+
+.octicon-arrow-small-left:before {
+    content: '\f0a1'
+}
+
+.octicon-arrow-small-right:before {
+    content: '\f071'
+}
+
+.octicon-arrow-small-up:before {
+    content: '\f09f'
+}
+
+.octicon-arrow-up:before {
+    content: '\f03d'
+}
+
+.octicon-beer:before {
+    content: '\f069'
+}
+
+.octicon-book:before {
+    content: '\f007'
+}
+
+.octicon-bookmark:before {
+    content: '\f07b'
+}
+
+.octicon-briefcase:before {
+    content: '\f0d3'
+}
+
+.octicon-broadcast:before {
+    content: '\f048'
+}
+
+.octicon-browser:before {
+    content: '\f0c5'
+}
+
+.octicon-bug:before {
+    content: '\f091'
+}
+
+.octicon-calendar:before {
+    content: '\f068'
+}
+
+.octicon-check:before {
+    content: '\f03a'
+}
+
+.octicon-checklist:before {
+    content: '\f076'
+}
+
+.octicon-chevron-down:before {
+    content: '\f0a3'
+}
+
+.octicon-chevron-left:before {
+    content: '\f0a4'
+}
+
+.octicon-chevron-right:before {
+    content: '\f078'
+}
+
+.octicon-chevron-up:before {
+    content: '\f0a2'
+}
+
+.octicon-circle-slash:before {
+    content: '\f084'
+}
+
+.octicon-circuit-board:before {
+    content: '\f0d6'
+}
+
+.octicon-clippy:before {
+    content: '\f035'
+}
+
+.octicon-clock:before {
+    content: '\f046'
+}
+
+.octicon-cloud-download:before {
+    content: '\f00b'
+}
+
+.octicon-cloud-upload:before {
+    content: '\f00c'
+}
+
+.octicon-code:before {
+    content: '\f05f'
+}
+
+.octicon-color-mode:before {
+    content: '\f065'
+}
+
+.octicon-comment-add:before,
+.octicon-comment:before {
+    content: '\f02b'
+}
+
+.octicon-comment-discussion:before {
+    content: '\f04f'
+}
+
+.octicon-credit-card:before {
+    content: '\f045'
+}
+
+.octicon-dash:before {
+    content: '\f0ca'
+}
+
+.octicon-dashboard:before {
+    content: '\f07d'
+}
+
+.octicon-database:before {
+    content: '\f096'
+}
+
+.octicon-device-camera:before {
+    content: '\f056'
+}
+
+.octicon-device-camera-video:before {
+    content: '\f057'
+}
+
+.octicon-device-desktop:before {
+    content: '\f27c'
+}
+
+.octicon-device-mobile:before {
+    content: '\f038'
+}
+
+.octicon-diff:before {
+    content: '\f04d'
+}
+
+.octicon-diff-added:before {
+    content: '\f06b'
+}
+
+.octicon-diff-ignored:before {
+    content: '\f099'
+}
+
+.octicon-diff-modified:before {
+    content: '\f06d'
+}
+
+.octicon-diff-removed:before {
+    content: '\f06c'
+}
+
+.octicon-diff-renamed:before {
+    content: '\f06e'
+}
+
+.octicon-ellipsis:before {
+    content: '\f09a'
+}
+
+.octicon-eye-unwatch:before,
+.octicon-eye-watch:before,
+.octicon-eye:before {
+    content: '\f04e'
+}
+
+.octicon-file-binary:before {
+    content: '\f094'
+}
+
+.octicon-file-code:before {
+    content: '\f010'
+}
+
+.octicon-file-directory:before {
+    content: '\f016'
+}
+
+.octicon-file-media:before {
+    content: '\f012'
+}
+
+.octicon-file-pdf:before {
+    content: '\f014'
+}
+
+.octicon-file-submodule:before {
+    content: '\f017'
+}
+
+.octicon-file-symlink-directory:before {
+    content: '\f0b1'
+}
+
+.octicon-file-symlink-file:before {
+    content: '\f0b0'
+}
+
+.octicon-file-text:before {
+    content: '\f011'
+}
+
+.octicon-file-zip:before {
+    content: '\f013'
+}
+
+.octicon-flame:before {
+    content: '\f0d2'
+}
+
+.octicon-fold:before {
+    content: '\f0cc'
+}
+
+.octicon-gear:before {
+    content: '\f02f'
+}
+
+.octicon-gift:before {
+    content: '\f042'
+}
+
+.octicon-gist:before {
+    content: '\f00e'
+}
+
+.octicon-gist-secret:before {
+    content: '\f08c'
+}
+
+.octicon-git-branch-create:before,
+.octicon-git-branch-delete:before,
+.octicon-git-branch:before {
+    content: '\f020'
+}
+
+.octicon-git-commit:before {
+    content: '\f01f'
+}
+
+.octicon-git-compare:before {
+    content: '\f0ac'
+}
+
+.octicon-git-merge:before {
+    content: '\f023'
+}
+
+.octicon-git-pull-request-abandoned:before,
+.octicon-git-pull-request:before {
+    content: '\f009'
+}
+
+.octicon-globe:before {
+    content: '\f0b6'
+}
+
+.octicon-graph:before {
+    content: '\f043'
+}
+
+.octicon-heart:before {
+    content: '\2665'
+}
+
+.octicon-history:before {
+    content: '\f07e'
+}
+
+.octicon-home:before {
+    content: '\f08d'
+}
+
+.octicon-horizontal-rule:before {
+    content: '\f070'
+}
+
+.octicon-hourglass:before {
+    content: '\f09e'
+}
+
+.octicon-hubot:before {
+    content: '\f09d'
+}
+
+.octicon-inbox:before {
+    content: '\f0cf'
+}
+
+.octicon-info:before {
+    content: '\f059'
+}
+
+.octicon-issue-closed:before {
+    content: '\f028'
+}
+
+.octicon-issue-opened:before {
+    content: '\f026'
+}
+
+.octicon-issue-reopened:before {
+    content: '\f027'
+}
+
+.octicon-jersey:before {
+    content: '\f019'
+}
+
+.octicon-jump-down:before {
+    content: '\f072'
+}
+
+.octicon-jump-left:before {
+    content: '\f0a5'
+}
+
+.octicon-jump-right:before {
+    content: '\f0a6'
+}
+
+.octicon-jump-up:before {
+    content: '\f073'
+}
+
+.octicon-key:before {
+    content: '\f049'
+}
+
+.octicon-keyboard:before {
+    content: '\f00d'
+}
+
+.octicon-law:before {
+    content: '\f0d8'
+}
+
+.octicon-light-bulb:before {
+    content: '\f000'
+}
+
+.octicon-link:before {
+    content: '\f05c'
+}
+
+.octicon-link-external:before {
+    content: '\f07f'
+}
+
+.octicon-list-ordered:before {
+    content: '\f062'
+}
+
+.octicon-list-unordered:before {
+    content: '\f061'
+}
+
+.octicon-location:before {
+    content: '\f060'
+}
+
+.octicon-gist-private:before,
+.octicon-mirror-private:before,
+.octicon-git-fork-private:before,
+.octicon-lock:before {
+    content: '\f06a'
+}
+
+.octicon-logo-github:before {
+    content: '\f092'
+}
+
+.octicon-mail:before {
+    content: '\f03b'
+}
+
+.octicon-mail-read:before {
+    content: '\f03c'
+}
+
+.octicon-mail-reply:before {
+    content: '\f051'
+}
+
+.octicon-mark-github:before {
+    content: '\f00a'
+}
+
+.octicon-markdown:before {
+    content: '\f0c9'
+}
+
+.octicon-megaphone:before {
+    content: '\f077'
+}
+
+.octicon-mention:before {
+    content: '\f0be'
+}
+
+.octicon-microscope:before {
+    content: '\f089'
+}
+
+.octicon-milestone:before {
+    content: '\f075'
+}
+
+.octicon-mirror-public:before,
+.octicon-mirror:before {
+    content: '\f024'
+}
+
+.octicon-mortar-board:before {
+    content: '\f0d7'
+}
+
+.octicon-move-down:before {
+    content: '\f0a8'
+}
+
+.octicon-move-left:before {
+    content: '\f074'
+}
+
+.octicon-move-right:before {
+    content: '\f0a9'
+}
+
+.octicon-move-up:before {
+    content: '\f0a7'
+}
+
+.octicon-mute:before {
+    content: '\f080'
+}
+
+.octicon-no-newline:before {
+    content: '\f09c'
+}
+
+.octicon-octoface:before {
+    content: '\f008'
+}
+
+.octicon-organization:before {
+    content: '\f037'
+}
+
+.octicon-package:before {
+    content: '\f0c4'
+}
+
+.octicon-paintcan:before {
+    content: '\f0d1'
+}
+
+.octicon-pencil:before {
+    content: '\f058'
+}
+
+.octicon-person-add:before,
+.octicon-person-follow:before,
+.octicon-person:before {
+    content: '\f018'
+}
+
+.octicon-pin:before {
+    content: '\f041'
+}
+
+.octicon-playback-fast-forward:before {
+    content: '\f0bd'
+}
+
+.octicon-playback-pause:before {
+    content: '\f0bb'
+}
+
+.octicon-playback-play:before {
+    content: '\f0bf'
+}
+
+.octicon-playback-rewind:before {
+    content: '\f0bc'
+}
+
+.octicon-plug:before {
+    content: '\f0d4'
+}
+
+.octicon-repo-create:before,
+.octicon-gist-new:before,
+.octicon-file-directory-create:before,
+.octicon-file-add:before,
+.octicon-plus:before {
+    content: '\f05d'
+}
+
+.octicon-podium:before {
+    content: '\f0af'
+}
+
+.octicon-primitive-dot:before {
+    content: '\f052'
+}
+
+.octicon-primitive-square:before {
+    content: '\f053'
+}
+
+.octicon-pulse:before {
+    content: '\f085'
+}
+
+.octicon-puzzle:before {
+    content: '\f0c0'
+}
+
+.octicon-question:before {
+    content: '\f02c'
+}
+
+.octicon-quote:before {
+    content: '\f063'
+}
+
+.octicon-radio-tower:before {
+    content: '\f030'
+}
+
+.octicon-repo-delete:before,
+.octicon-repo:before {
+    content: '\f001'
+}
+
+.octicon-repo-clone:before {
+    content: '\f04c'
+}
+
+.octicon-repo-force-push:before {
+    content: '\f04a'
+}
+
+.octicon-gist-fork:before,
+.octicon-repo-forked:before {
+    content: '\f002'
+}
+
+.octicon-repo-pull:before {
+    content: '\f006'
+}
+
+.octicon-repo-push:before {
+    content: '\f005'
+}
+
+.octicon-rocket:before {
+    content: '\f033'
+}
+
+.octicon-rss:before {
+    content: '\f034'
+}
+
+.octicon-ruby:before {
+    content: '\f047'
+}
+
+.octicon-screen-full:before {
+    content: '\f066'
+}
+
+.octicon-screen-normal:before {
+    content: '\f067'
+}
+
+.octicon-search-save:before,
+.octicon-search:before {
+    content: '\f02e'
+}
+
+.octicon-server:before {
+    content: '\f097'
+}
+
+.octicon-settings:before {
+    content: '\f07c'
+}
+
+.octicon-log-in:before,
+.octicon-sign-in:before {
+    content: '\f036'
+}
+
+.octicon-log-out:before,
+.octicon-sign-out:before {
+    content: '\f032'
+}
+
+.octicon-split:before {
+    content: '\f0c6'
+}
+
+.octicon-squirrel:before {
+    content: '\f0b2'
+}
+
+.octicon-star-add:before,
+.octicon-star-delete:before,
+.octicon-star:before {
+    content: '\f02a'
+}
+
+.octicon-steps:before {
+    content: '\f0c7'
+}
+
+.octicon-stop:before {
+    content: '\f08f'
+}
+
+.octicon-repo-sync:before,
+.octicon-sync:before {
+    content: '\f087'
+}
+
+.octicon-tag-remove:before,
+.octicon-tag-add:before,
+.octicon-tag:before {
+    content: '\f015'
+}
+
+.octicon-telescope:before {
+    content: '\f088'
+}
+
+.octicon-terminal:before {
+    content: '\f0c8'
+}
+
+.octicon-three-bars:before {
+    content: '\f05e'
+}
+
+.octicon-tools:before {
+    content: '\f031'
+}
+
+.octicon-trashcan:before {
+    content: '\f0d0'
+}
+
+.octicon-triangle-down:before {
+    content: '\f05b'
+}
+
+.octicon-triangle-left:before {
+    content: '\f044'
+}
+
+.octicon-triangle-right:before {
+    content: '\f05a'
+}
+
+.octicon-triangle-up:before {
+    content: '\f0aa'
+}
+
+.octicon-unfold:before {
+    content: '\f039'
+}
+
+.octicon-unmute:before {
+    content: '\f0ba'
+}
+
+.octicon-versions:before {
+    content: '\f064'
+}
+
+.octicon-remove-close:before,
+.octicon-x:before {
+    content: '\f081'
+}
+
+.octicon-zap:before {
+    content: '\26A1'
+}
